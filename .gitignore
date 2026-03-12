@@ -1,0 +1,27 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+
+venv/
+.venv/
+env/
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.vscode/
+
+*.csv 
+*.json 
+*.xlsx 
+data/
+
+.env
+secrets.txt
+config.py
+
+# Cloudflare Tunnel credentials and certs
+.cloudflared/
+cert.pem
+*.json
+
