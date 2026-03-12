@@ -32,11 +32,17 @@
         <div id="list">
             {% for task in tasks %}
             <div class="task-item {{ task.priority }}">
-                <span>{{ task.content }}</span>
-                <small>{{ task.priority|upper }}</small>
-            </div>
+        <span>{{ task.content }}</span>
+        <div>
+            <small>{{ task.priority|upper }}</small>
+            <!-- The Delete Button -->
+            <a href="/delete/{{ loop.index0 }}" style="margin-left: 10px; color: #ff4d4d; text-decoration: none; font-weight: bold;">×</a>
+        </div>
+        </div>
+
             {% endfor %}
         </div>
+        
     </div>
 </body>
 </html>
